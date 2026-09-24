@@ -10,7 +10,16 @@
   "homepage": "https://codex-reset.com/developers",
   "repository": "https://github.com/suvadadepolo-blip/codex-reset-mcp",
   "license": "MIT",
-  "keywords": ["codex", "openai", "usage-limits", "rate-limits", "reset", "forecast", "status", "mcp"],
+  "keywords": [
+    "codex",
+    "openai",
+    "usage-limits",
+    "rate-limits",
+    "reset",
+    "forecast",
+    "status",
+    "mcp"
+  ],
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",
   "interface": {
@@ -19,7 +28,9 @@
     "longDescription": "Adds the hosted, read-only Codex Reset MCP server (https://codex-reset.com/mcp) to Codex. Three tools answer the questions a rate-limited Codex user actually has: get_reset_forecast gives the probability of a global usage-limit reset in the next 24 and 48 hours; get_reset_timeline lists verified past resets, boosts and credits, each with its source link; get_codex_status says whether Codex is having an outage, so an error is not mistaken for a hit limit. Nothing runs locally, no API key, no account, no telemetry: the plugin is only a URL.",
     "developerName": "codex-reset.com",
     "category": "Utilities",
-    "capabilities": ["Read"],
+    "capabilities": [
+      "Read"
+    ],
     "websiteURL": "https://codex-reset.com/",
     "privacyPolicyURL": "https://codex-reset.com/privacy",
     "termsOfServiceURL": "https://codex-reset.com/terms",
@@ -30,6 +41,9 @@
     ],
     "brandColor": "#41ff8b",
     "logo": "./assets/logo.svg",
-    "composerIcon": "./assets/logo.svg"
+    "composerIcon": "./assets/logo.svg",
+    "screenshots": [
+      "./assets/screenshot.png"
+    ]
   }
 }
