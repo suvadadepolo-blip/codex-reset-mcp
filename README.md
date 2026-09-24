@@ -8,7 +8,7 @@ Read-only facts about OpenAI Codex usage-limit resets, served by [codex-reset.co
 - **Transport:** Streamable HTTP, JSON-RPC 2.0, protocol `2025-06-18`. POST only; a GET answers 405.
 - **Auth:** none. No API key, no sign-up, no session.
 - **Cost:** free, with credit (see [Terms](#terms)).
-- **Docs:** [codex-reset.com/developers](https://codex-reset.com/developers) · [server card](https://codex-reset.com/.well-known/mcp/server-card.json) · [llms.txt](https://codex-reset.com/llms.txt)
+- **Docs:** [codex-reset.com/developers](https://codex-reset.com/developers) · [terminal walkthrough on dev.to](https://dev.to/codexreset/is-a-codex-usage-limit-reset-coming-check-from-your-terminal-with-a-free-api-or-mcp-3enb) · [server card](https://codex-reset.com/.well-known/mcp/server-card.json) · [llms.txt](https://codex-reset.com/llms.txt)
 
 This repository holds the client configuration and directory metadata for the hosted server. There is nothing to install or run: the server lives at the endpoint above, and its source is not published here.
 
@@ -60,6 +60,8 @@ This repository is also a Claude Code plugin (`.claude-plugin/plugin.json` + `.m
 [mcp_servers.codex-reset]
 url = "https://codex-reset.com/mcp"
 ```
+
+This repository is also a Codex plugin (`.codex-plugin/plugin.json`: the MCP server plus a `codex-reset` skill), listed in [awesome-codex-plugins](https://github.com/hashgraph-online/awesome-codex-plugins) and the [HOL plugin registry](https://hol.org/registry/plugins). The two `config.toml` lines above are all a plain Codex setup needs.
 
 ### Cursor
 
