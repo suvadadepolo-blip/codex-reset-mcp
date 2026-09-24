@@ -1,0 +1,113 @@
+{
+  "author": "suvadadepolo-blip",
+  "authorUrl": "https://github.com/suvadadepolo-blip",
+  "cloudEndpoint": "https://codex-reset.com/mcp",
+  "description": "Read-only OpenAI Codex usage-limit reset data: 24/48h reset forecast, verified reset record with sources, and Codex service status. Hosted, no API key.",
+  "homepage": "https://github.com/suvadadepolo-blip/codex-reset-mcp",
+  "identifier": "suvadadepolo-blip-codex-reset-mcp",
+  "name": "Codex Reset",
+  "prompts": [],
+  "resources": [],
+  "tools": [
+    {
+      "name": "get_reset_forecast",
+      "title": "Codex reset forecast",
+      "description": "Current probability that OpenAI resets Codex usage limits in the next 24 and 48 hours, with confidence, the last confirmed reset time and any active official signal. A forecast, not a promise.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "locale": {
+            "type": "string",
+            "enum": [
+              "en",
+              "zh",
+              "ja",
+              "es"
+            ],
+            "description": "Language of the human-readable copy. Default en."
+          }
+        },
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_reset_timeline",
+      "title": "Codex reset record",
+      "description": "Dated record of verified Codex usage-limit resets and related announcements (boosts, unlocks, credits), newest first, each with its source URL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "type": "string",
+            "enum": [
+              "reset",
+              "boost",
+              "unlock",
+              "credits"
+            ],
+            "description": "Kind of event. Default reset."
+          },
+          "from": {
+            "type": "string",
+            "description": "Earliest date, YYYY-MM-DD."
+          },
+          "to": {
+            "type": "string",
+            "description": "Latest date, YYYY-MM-DD."
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "description": "Number of events. Default 10."
+          },
+          "locale": {
+            "type": "string",
+            "enum": [
+              "en",
+              "zh",
+              "ja",
+              "es"
+            ],
+            "description": "Language of the human-readable copy. Default en."
+          }
+        },
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_codex_status",
+      "title": "Codex service status",
+      "description": "Current OpenAI Codex service state as tracked by codex-reset.com, to tell an outage apart from a usage limit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "locale": {
+            "type": "string",
+            "enum": [
+              "en",
+              "zh",
+              "ja",
+              "es"
+            ],
+            "description": "Language of the human-readable copy. Default en."
+          }
+        },
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    }
+  ],
+  "version": "1.0.0"
+}
