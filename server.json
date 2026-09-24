@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.suvadadepolo-blip/codex-reset",
+  "title": "Codex Reset",
+  "description": "Read-only Codex usage-limit reset data: 24/48h reset forecast, dated reset record, service status.",
+  "version": "1.0.0",
+  "websiteUrl": "https://codex-reset.com/developers",
+  "repository": {
+    "url": "https://github.com/suvadadepolo-blip/codex-reset-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://codex-reset.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://codex-reset.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://codex-reset.com/mcp"
+    }
+  ]
+}

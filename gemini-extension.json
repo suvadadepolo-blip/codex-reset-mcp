@@ -1,0 +1,10 @@
+{
+  "name": "codex-reset",
+  "version": "1.0.0",
+  "description": "Read-only OpenAI Codex usage-limit reset data from codex-reset.com: 24/48h reset forecast, verified reset record and service status. No API key.",
+  "mcpServers": {
+    "codex-reset": {
+      "httpUrl": "https://codex-reset.com/mcp"
+    }
+  }
+}
