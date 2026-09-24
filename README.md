@@ -111,6 +111,7 @@ curl -sS https://codex-reset.com/mcp \
 - Official MCP Registry: `io.github.suvadadepolo-blip/codex-reset`
 - [Smithery](https://smithery.ai/servers/suvadadepolo/codex-reset)
 - [cursor.directory](https://cursor.directory/plugins/codex-reset)
+- [Glama](https://glama.ai/mcp/connectors/com.codex-reset/codex-reset)
 
 ## Terms
 
