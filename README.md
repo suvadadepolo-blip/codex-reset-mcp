@@ -1,5 +1,7 @@
 # Codex Reset MCP server
 
+[![smithery badge](https://smithery.ai/badge/suvadadepolo/codex-reset)](https://smithery.ai/servers/suvadadepolo/codex-reset)
+
 Read-only facts about OpenAI Codex usage-limit resets, served by [codex-reset.com](https://codex-reset.com/) over the Model Context Protocol.
 
 - **Endpoint:** `https://codex-reset.com/mcp`
@@ -103,6 +105,12 @@ curl -sS https://codex-reset.com/mcp \
   -H 'accept: application/json, text/event-stream' \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
+
+## Where it is listed
+
+- Official MCP Registry: `io.github.suvadadepolo-blip/codex-reset`
+- [Smithery](https://smithery.ai/servers/suvadadepolo/codex-reset)
+- [cursor.directory](https://cursor.directory/plugins/codex-reset)
 
 ## Terms
 
